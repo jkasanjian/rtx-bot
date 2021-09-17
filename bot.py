@@ -41,7 +41,7 @@ while not isComplete:
         driver.get("https://www.bestbuy.com/cart")
         print("Moved to cart")
 
-        checkoutBtn = WebDriverWait(driver, 30).until(
+        checkoutBtn = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, '//*[@id="cartApp"]/div[2]/div[1]/div/div[1]/div[1]/section[2]/div/div/div[4]/div/div[1]/button'))
         )
         
